@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Row from './Row'
-import { Th, Tr } from '../styledComponents/table'
 import { scapeRoomList } from '../apiMock'
 
 class Table extends Component {

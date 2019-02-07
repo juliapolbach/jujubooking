@@ -12,14 +12,14 @@ export const MainDiv = styled.div`
   margin: 30px 60px 30px 60px;
   height: 100vh;
 `
-export const RightDiv = styled.div`
-  margin: 30px 30px 30px 15px;
+export const LeftDiv = styled.div`
+  margin: 30px 15px 30px 30px;
   width: 70vw;
   height: 100vh;
   border: aquamarine 1px solid;
 `
-export const LeftDiv = styled.div`
-  margin: 30px 15px 30px 30px;
+export const RightDiv = styled.div`
+  margin: 30px 30px 30px 15px;
   width: 30vw;
   height: 100vh;
   border: aquamarine 1px solid;

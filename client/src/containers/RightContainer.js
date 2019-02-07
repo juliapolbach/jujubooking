@@ -7,7 +7,6 @@ class RightContainer extends Component {
   render () {
     return (
       <RightDiv>
-        <Table/>
       </RightDiv>
     )
   }
