@@ -6,18 +6,18 @@ import { scapeRoomList } from '../apiMock'
 
 class Table extends Component {
   static renderHeaders (headers) {
-    return (<Tr>
+    return (<tr>
       {headers.map((header, index) =>
-        <Th key={index}>{header}</Th>
+        <th key={index}>{header}</th>
       )}
-    </Tr>
+    </tr>
     )
   }
 
   constructor (props) {
     super(props)
     this.state = {
-      headers: ['sala', 'scape', 'hora', 'dia', 'dirección', 'personas', 'dificultad']
+      headers: ['scape', 'sala', 'hora']
     }
   }
 
@@ -26,7 +26,7 @@ class Table extends Component {
       <table>
         <thead>{Table.renderHeaders(this.state.headers)}</thead>
         <tbody>{scapeRoomList.map((scapeRoom, index) =>
-          (<Row scapeRoom={scapeRoom} index={index} />))}</tbody>
+          (<Row scapeRoomName={scapeRoom.scapeRoomName} rooms={scapeRoom.rooms} key={index} />))}</tbody>
       </table>
     )
   }

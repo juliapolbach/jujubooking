@@ -8,19 +8,29 @@ export const scapeRoomList = [
         'price': [48, 90],
         'difficulty': 5,
         'duration': 60,
+        'location': {
+          'address': 'C/Fernández Ríos 70',
+          'geo': {
+            latitude: 40.435386,
+            longitude: -3.7125342
+          }
+        },
         'availability': [{
           'day': '01-01-2019',
           'hour': '10:00',
+          'link': 'http://',
           'available': true
         },
         {
           'day': '01-01-2019',
           'hour': '11:00',
+          'link': 'http://',
           'available': true
         },
         {
           'day': '02-01-2019',
           'hour': '13:30',
+          'link': 'http://',
           'available': false
         }]
       },
@@ -30,19 +40,29 @@ export const scapeRoomList = [
         'price': [56, 95],
         'difficulty': 8,
         'duration': 60,
+        'location': {
+          'address': 'C/Fernández Ríos 70',
+          'geo': {
+            latitude: 40.435386,
+            longitude: -3.7125342
+          }
+        },
         'availability': [{
           'day': '03-01-2019',
           'hour': '10:00',
+          'link': 'http://',
           'available': true
         },
         {
           'day': '04-01-2019',
           'hour': '11:00',
+          'link': 'http://',
           'available': true
         },
         {
           'day': '02-01-2019',
           'hour': '13:30',
+          'link': 'http://',
           'available': false
         }]
       }]
@@ -56,21 +76,31 @@ export const scapeRoomList = [
         'price': [48, 90],
         'difficulty': 5,
         'duration': 60,
+        'location': {
+          'address': 'C/Fernández Ríos 70',
+          'geo': {
+            latitude: 40.435386,
+            longitude: -3.7125342
+          }
+        },
         'availability': [{
           'day': '01-01-2019',
           'hour': '10:00',
+          'link': 'http://',
           'available': true
         },
-          {
-            'day': '01-01-2019',
-            'hour': '11:00',
-            'available': true
-          },
-          {
-            'day': '02-01-2019',
-            'hour': '13:30',
-            'available': false
-          }]
+        {
+          'day': '01-01-2019',
+          'hour': '11:00',
+          'link': 'http://',
+          'available': true
+        },
+        {
+          'day': '02-01-2019',
+          'hour': '13:30',
+          'link': 'http://',
+          'available': false
+        }]
       }]
   }
 ]
