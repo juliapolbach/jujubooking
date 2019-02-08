@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { RowDiv, Cell } from '../styledComponents/table'
 
 class Row extends Component {
   constructor (props) {
@@ -8,16 +9,14 @@ class Row extends Component {
   }
 
   roomRow (room) {
-    console.log(room.availability)
-
     return (<React.Fragment>
       {room.availability.map((available, index) => (
-        (<tr key={index}>
-          <td>{this.props.scapeRoomName}</td>
-          <td>{room.name}</td>
-          <td>{available.hour}</td>
+        (<RowDiv key={index}>
+          <Cell>{this.props.scapeRoomName}</Cell>
+          <Cell>{room.name}</Cell>
+          <Cell>{available.hour}</Cell>
           <button>Reservar</button>
-        </tr>)))}
+        </RowDiv>)))}
     </React.Fragment>)
   }
 

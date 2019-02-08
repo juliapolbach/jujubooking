@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import DayFilter from './DayFilter'
+import { SearchBarDiv } from '../styledComponents/main'
+
 
 class SearchBar extends Component {
   render () {
     return (
-      <div>
+      <SearchBarDiv>
         <DayFilter/>
-      </div>
+      </SearchBarDiv>
     )
   }
 }

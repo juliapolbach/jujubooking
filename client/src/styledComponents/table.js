@@ -1,15 +1,20 @@
 import styled from 'styled-components'
 
-export const Th = styled.th`
-       font-size: 1.2rem; 
-       text-align: center;
-       padding: 0 3px 5px 3px;
-`
-
-export const Tr = styled.tr`
+export const RowDiv = styled.div`
        display: flex;
-       justify-content: center;
+       justify-content: space-around;
        font-size: 1.2rem; 
-       text-align: center;
-       padding: 0 3px 5px 3px;
+       padding: 10px 3px 10px 3px;
+       color: ${props => props.theme.letter};
+       border-bottom: 1px solid ${props => props.theme.grey};
+       &:hover {
+       background: ${props => props.theme.trolleyGreyLight};
+       color: ${props => props.theme.arsenic};
+  }
+`
+export const Cell = styled.div`
+       width: 150px;
+       justify-content: flex-start;
+       font-size: 0.8rem; 
+       padding: 5px 3px 5px 3px;      
 `

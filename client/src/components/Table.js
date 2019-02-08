@@ -1,32 +1,33 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Row from './Row'
+import HeaderRow from './HeaderRow'
 import { scapeRoomList } from '../apiMock'
+import { Cell } from '../styledComponents/table'
 
 class Table extends Component {
   static renderHeaders (headers) {
-    return (<tr>
-      {headers.map((header, index) =>
-        <th key={index}>{header}</th>
-      )}
-    </tr>
+    return (
+      headers.map((header, index) =>
+        <Cell key={index}>{header}</Cell>
+      )
     )
   }
 
   constructor (props) {
     super(props)
     this.state = {
-      headers: ['scape', 'sala', 'hora']
+      headers: ['scape', 'sala', 'hora', '']
     }
   }
 
   render () {
     return (
-      <table>
-        <thead>{Table.renderHeaders(this.state.headers)}</thead>
-        <tbody>{scapeRoomList.map((scapeRoom, index) =>
-          (<Row scapeRoomName={scapeRoom.scapeRoomName} rooms={scapeRoom.rooms} key={index} />))}</tbody>
-      </table>
+      <div>
+        <HeaderRow headers={this.state.headers}/>
+        {scapeRoomList.map((scapeRoom, index) =>
+          (<Row scapeRoomName={scapeRoom.scapeRoomName} rooms={scapeRoom.rooms} key={index} />))}
+      </div>
     )
   }
 }
